@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Crypto Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="converter-panel">
+    <div class="logo-section">
+      <img src="../crypto-converter/images/bitcoin.png" alt="Bitcoin Logo" class="currency-logo logo-from">
+      <span class="conversion-indicator"><-></span>
+      <img src="../crypto-converter/images/ethereum.png" alt="Ethereum Logo" class="currency-logo logo-to">
+    </div>
+    <h1>Crypto Converter</h1>
+
+    <div class="conversion-section">
+      <div class="currency-input">
+        <select class="currency-select currency-from">
+          <option value="usd">U.S. Dollar (USD)</option>
+          <option value="bitcoin">Bitcoin (BTC)</option>
+          <option value="ethereum">Ethereum (ETH)</option>
+          <option value="ripple">Ripple (XRP)</option>
+          <option value="binancecoin">BNB (BNB)</option>
+          <option value="solana">Solana (SOL)</option>
+          <option value="dogecoin">Dogecoin (DOGE)</option>
+          <option value="matic-network">Polygon (MATIC)</option>
+          <option value="chainlink">Chainlink (LINK)</option>
+          <option value="tron">Tron (TRX)</option>
+        </select>
+        <input type="number" placeholder="Amount" class="amount-input amount-from">
+      </div>
+
+      <div class="currency-output">
+        <select class="currency-select currency-to">
+          <option value="usd">U.S. Dollar (USD)</option>
+          <option value="bitcoin" selected>Bitcoin (BTC)</option> <!-- Set Bitcoin as default -->
+          <option value="ethereum">Ethereum (ETH)</option>
+          <option value="ripple">Ripple (XRP)</option>
+          <option value="binancecoin">BNB (BNB)</option>
+          <option value="solana">Solana (SOL)</option>
+          <option value="dogecoin">Dogecoin (DOGE)</option>
+          <option value="matic-network">Polygon (MATIC)</option>
+          <option value="chainlink">Chainlink (LINK)</option>
+          <option value="tron">Tron (TRX)</option>
+        </select>
+        <input type="number" placeholder="Converted Amount" class="amount-input amount-to" readonly>
+      </div>
+
+      <button class="btn btn-convert">Convert</button>
+      <button class="btn btn-reset">Reset</button>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
